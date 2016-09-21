@@ -15,3 +15,6 @@ A food experiment for Ruby on Rails workshop
 2. Image Uploads (S3)
 3. Authentication (Devise)
 4. Heroku
+
+## Steps
+[Foodie is coming!](tutos/start.md)
