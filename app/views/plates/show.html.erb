@@ -10,3 +10,5 @@
   <strong>producer:</strong>
   <%= @plate.producer %>
 </span>
+
+<%= render partial: 'ingredients/ingredients', locals: { ingredients: @plate.ingredients.all} %>
