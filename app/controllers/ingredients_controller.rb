@@ -8,8 +8,8 @@ class IngredientsController < ApplicationController
   end
 
   def create
-    ingredient= @plate.ingredients.new(ingredient_params)
-    if ingredient.save
+    @ingredient= @plate.ingredients.new(ingredient_params)
+    if @ingredient.save
       redirect_to  @plate ,notice: "Ingredient was successfully created."
     else
       render "new"

@@ -1,14 +1,16 @@
-<h1>
+<p>
+<strong> Plate:  </strong>
   <%= @plate.title %>
-</h1>
+</p>
 
 <p>
+  <strong>Description:</strong>
   <%= @plate.description %>
 </p>
 
-<span>
-  <strong>producer:</strong>
+<p>
+  <strong>Producer:</strong>
   <%= @plate.producer %>
-</span>
+</p>
 
-<%= render partial: 'ingredients/ingredients', locals: { ingredients: @plate.ingredients.all} %>
+<%= render partial: 'ingredients/ingredients', locals: { ingredients: @plate.ingredients.order(created_at: :asc)} %>
