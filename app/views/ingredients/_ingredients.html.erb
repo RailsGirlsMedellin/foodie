@@ -1,0 +1,24 @@
+<h1>Listing Ingredient</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>content</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% ingredients.each do |ingredient| %>
+      <tr>
+        <td><%= ingredient.content %></td>
+        <td><%= link_to 'Edit', edit_plate_ingredient_path(@plate, ingredient) %></td>
+        <td><%= link_to 'Destroy', [@plate, ingredient], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Ingredient', new_plate_ingredient_path(@plate) %>
