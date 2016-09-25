@@ -1,0 +1,31 @@
+<h1>Listing Plates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>description</th>
+      <th>producer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plates.each do |plate| %>
+      <tr>
+        <td><%= plate.title %></td>
+        <td><%= plate.description.truncate(30) %></td>
+        <td><%= plate.producer %></td>
+        <td><%= link_to 'Show Ingredients', plate %></td>
+        <td><%= link_to 'Edit', edit_plate_path(plate) %></td>
+        <td><%= link_to 'Destroy', plate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plate', new_plate_path %>
