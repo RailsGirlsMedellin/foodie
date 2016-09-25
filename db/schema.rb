@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921063823) do
+ActiveRecord::Schema.define(version: 20160925175612) do
 
   create_table "ingredients", force: :cascade do |t|
     t.text     "content"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(version: 20160921063823) do
     t.string   "producer"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.integer  "plate_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
