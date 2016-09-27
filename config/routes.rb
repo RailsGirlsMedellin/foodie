@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'landing#index'
   resources :plates do
-    resources :ingredients , except: [:index]
+    resources :ingredients, except: [:index]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

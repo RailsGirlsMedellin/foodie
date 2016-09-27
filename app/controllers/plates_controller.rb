@@ -6,13 +6,13 @@ class PlatesController < ApplicationController
   end
 
   def new
-    @plate= Plate.new
+    @plate = Plate.new
   end
 
   def create
-    @plate=Plate.new(plate_params)
+    @plate = Plate.new(plate_params)
     if @plate.save
-      redirect_to  plates_path, notice: "Plate was successfully created."
+      redirect_to plates_path, notice: 'Plate was successfully created.'
     else
       render 'new'
     end
@@ -23,7 +23,7 @@ class PlatesController < ApplicationController
 
   def update
     if @plate.update(plate_params)
-      redirect_to plates_path, notice: "Plate was successfully updated."
+      redirect_to plates_path, notice: 'Plate was successfully updated.'
     else
       render 'edit'
     end
@@ -31,7 +31,7 @@ class PlatesController < ApplicationController
 
   def destroy
     @plate.destroy
-    redirect_to  plates_path, notice: "Plate was successfully destroyed."
+    redirect_to plates_path, notice: 'Plate was successfully destroyed.'
   end
 
   def show
@@ -39,12 +39,11 @@ class PlatesController < ApplicationController
 
   private
 
-   def plate_params
-    params.require(:plate).permit(:id,:title,:description,:producer)
-   end
+  def plate_params
+    params.require(:plate).permit(:id, :title, :description, :producer)
+  end
 
-   def set_plate
-     @plate = Plate.find(params[:id])
-   end
-
+  def set_plate
+    @plate = Plate.find(params[:id])
+  end
 end
