@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'landing#index'
   resources :plates do
     resources :ingredients , except: [:index]
