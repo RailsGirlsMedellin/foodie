@@ -19,7 +19,8 @@
         <td><%= link_to 'Show Ingredients', plate %></td>
         <td><%= link_to 'Edit', edit_plate_path(plate) %></td>
         <td><%= link_to 'Destroy', plate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+        <td><%= pluralize(plate.votes.count, "vote") %></td>
+        <td><%= button_to '+1', upvote_plate_path(plate), method: :post %></td>
 
       </tr>
     <% end %>

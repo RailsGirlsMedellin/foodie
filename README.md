@@ -13,8 +13,7 @@ A food experiment for Ruby on Rails workshop
 
 1. Pretty UI (bootstrap)
 2. Image Uploads (S3)
-
-3. Authentication (Devise?)
+3. Authentication (Devise)
 4. Heroku (git)
 
 ## Steps

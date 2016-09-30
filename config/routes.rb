@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root 'landing#index'
   resources :plates do
-    resources :ingredients, except: [:index]
+      resources :ingredients , except: [:index]
+      member do
+        post 'upvote'
   end
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

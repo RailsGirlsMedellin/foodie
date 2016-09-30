@@ -37,6 +37,12 @@ class PlatesController < ApplicationController
   def show
   end
 
+  def upvote
+    @plate = Plate.find(params[:id])
+    @plate.votes.create
+    redirect_to(plates_path)
+  end
+
   private
 
   def plate_params
