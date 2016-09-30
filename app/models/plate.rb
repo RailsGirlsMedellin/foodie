@@ -1,4 +1,5 @@
 class Plate < ActiveRecord::Base
+
   has_many :ingredients, dependent: :destroy
   has_many :votes, dependent: :destroy
   validates :title, :description, :producer, presence: true
