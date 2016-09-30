@@ -1,18 +1,17 @@
 class IngredientsController < ApplicationController
   before_action :set_plate
-  before_action :set_ingredient ,only: [ :edit, :update, :destroy]
-
+  before_action :set_ingredient, only: [:edit, :update, :destroy]
 
   def new
-    @ingredient= @plate.ingredients.new
+    @ingredient = @plate.ingredients.new
   end
 
   def create
-    @ingredient= @plate.ingredients.new(ingredient_params)
+    @ingredient = @plate.ingredients.new(ingredient_params)
     if @ingredient.save
-      redirect_to  @plate ,notice: "Ingredient was successfully created."
+      redirect_to @plate, notice: 'Ingredient was successfully created.'
     else
-      render "new"
+      render 'new'
     end
   end
 
@@ -21,21 +20,21 @@ class IngredientsController < ApplicationController
 
   def update
     if @ingredient.update(ingredient_params)
-      redirect_to @plate, notice: "Ingredient was successfully updated."
+      redirect_to @plate, notice: 'Ingredient was successfully updated.'
     else
-      render "edit"
+      render 'edit'
     end
   end
 
   def destroy
     @ingredient.destroy
-    redirect_to @plate, notice: "Ingredient was successfully destroyed."
+    redirect_to @plate, notice: 'Ingredient was successfully destroyed.'
   end
 
   private
 
   def set_plate
-    @plate= Plate.find(params[:plate_id])
+    @plate = Plate.find(params[:plate_id])
   end
 
   def set_ingredient
@@ -43,6 +42,6 @@ class IngredientsController < ApplicationController
   end
 
   def ingredient_params
-  params.require(:ingredient).permit(:id,:content, :plate_id)
+    params.require(:ingredient).permit(:id, :content, :plate_id)
   end
 end
