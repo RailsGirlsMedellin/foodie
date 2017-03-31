@@ -15,6 +15,6 @@ Cada vez que se crean migraciones, para poder visualizar la aplicación en el na
 $rake db:migrate
 ```
 
-asi creamos las tablas en la BD
+asi creamos las tablas nuevas o actualizamos la BD
 
 Ya podemos acceder desde nuestros navegadores a http://localhost:3000/plates y ver, crear, editar y borrar nuestros platos
