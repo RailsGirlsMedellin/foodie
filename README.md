@@ -21,4 +21,4 @@ A food experiment for Ruby on Rails workshop
 
 [It's Magic! scaffold](tutos/scaffold.md) 😱😱
 
-[let's vote for our favorite plate](tutos/scaffold.md) 🍕 | 🍔 | 🍟 | 🍗
+[let's vote for our favorite plate](tutos/votes.md) 🍕 | 🍔 | 🍟 | 🍗
