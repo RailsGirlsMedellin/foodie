@@ -17,4 +17,6 @@ $rake db:migrate
 
 asi creamos las tablas nuevas o actualizamos la BD
 
-Ya podemos acceder desde nuestros navegadores a http://localhost:3000/plates y ver, crear, editar y borrar nuestros platos
+Ya podemos acceder desde nuestros navegadores a http://localhost:3000/plates y ver, crear, editar y borrar nuestros platos.
+
+[Inicio](../README.md)
