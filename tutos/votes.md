@@ -62,3 +62,4 @@ en app/views/plates/index.html agregar despues del ...link_to 'destroy'...
  <td><%= pluralize(plate.votes.count, "vote") %></td>
  <td><%= button_to '+1', upvote_plate_path(plate), method: :post %></td>
 ```
+[Inicio](../README.md)
