@@ -58,5 +58,5 @@ por
 root 'pages#index'
 ```
 -->
-[Inicio](../README.md)
+[Siguiente](../tutos/scaffold.md)
 
