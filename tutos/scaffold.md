@@ -22,8 +22,6 @@ Abre el archivo que se encuenta en  ``` config/routes.rb ```  y añade la linea
 root 'plates#index'
 ```
 
--->
-
-Ya podemos acceder desde nuestros navegadores a http://localhost:3000/plates y ver, crear, editar y borrar nuestros platos.
+Ya podemos acceder desde nuestros navegadores a http://localhost:3000/ y ver, crear, editar y borrar nuestros platos.
 
 [Siguiente](../tutos/votes.md)
