@@ -2,13 +2,13 @@
 
 ### ¿Qué necesitamos?
 
-1. [Un modelo](https://github.com/ltciro/foodie/new/master/tutos#modelo)
+1. [Un modelo](/tutos/votes.md#modelo)
 
-2. [Un controlador y acción](https://github.com/ltciro/foodie/new/master/tutos#controladoraccion)
+2. [Un controlador y acción](/tutos/votes.md#controladoraccion)
 
-3. [Una ruta](https://github.com/ltciro/foodie/new/master/tutos#ruta)
+3. [Una ruta](/tutos/votes.md#ruta)
 
-4. [Una vista](https://github.com/ltciro/foodie/new/master/tutos#vista)
+4. [Una vista](/tutos/votes.md#vista)
 
 
 ### Modelo
@@ -62,4 +62,4 @@ en app/views/plates/index.html agregar despues del ...link_to 'destroy'...
  <td><%= pluralize(plate.votes.count, "vote") %></td>
  <td><%= button_to '+1', upvote_plate_path(plate), method: :post %></td>
 ```
-[Inicio](../README.md)
+
