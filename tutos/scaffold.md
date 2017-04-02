@@ -2,7 +2,7 @@
 
 El scaffolding es una técnica que permite crear CRUD(Create, Read, Update, Delete) de un modelo, pero en forma mucho más rápida. Abrimos nuestra consola y escribimos:
 ```
-$rails g scaffold Plate title:string description:text producer:string
+$ rails g scaffold Plate title description:text image
 ```
 
 EL scaffold entonces crea un modelo con los atributos que le especificamos como title etc.. y este modelo representa una tabla que se creara en nuestra base de datos
@@ -12,11 +12,18 @@ junto con sus vistas y las rutas para accederlas. Osea ya tenemos todo listo par
 
 Cada vez que se crean migraciones, para poder visualizar la aplicación en el navegador, rails nos pide que generemos esas migraciones en la base de datos con este comando:
 ```
-$rake db:migrate
+$ rake db:migrate
 ```
 
-asi creamos las tablas nuevas o actualizamos la BD
+Con ese comando creamos las tablas nuevas o actualizamos la BD
+
+Abre el archivo que se encuenta en  ``` config/routes.rb ```  y añade la linea
+```ruby
+root 'plates#index'
+```
+
+-->
 
 Ya podemos acceder desde nuestros navegadores a http://localhost:3000/plates y ver, crear, editar y borrar nuestros platos.
 
-[Inicio](../README.md)
+[Siguiente](../tutos/votes.md)
