@@ -17,4 +17,8 @@ A food experiment for Ruby on Rails workshop
 4. Heroku (git)
 
 ## Steps
-[Foodie is coming!](tutos/start.md)
+[Foodie is coming! start app](tutos/start.md) 💗 :neckbeard:
+
+[It's Magic! scaffold](tutos/scaffold.md) 😱😱
+
+[let's vote for our favorite plate](tutos/votes.md) 🍕 | 🍔 | 🍟 | 🍗

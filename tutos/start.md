@@ -2,7 +2,7 @@
 
 Despues de haber realizado la instalación, vamos a crear una nueva aplicación nombrada  *foodie*
 
-##Crear app
+### Crear app
 Abre la terminal y ubica la carpeta donde deseas guardar la app, para navegar entre carpetas en la terminal usamos los comandos ```$ cd nombredelacarpeta``` para entrar y ```$ cd ..``` para salir. Ademas con ```$ ls```  o ```$ dir``` puedes ver lo que hay dentro de la capeta en la que te encuentras.
 
 Para crear la app de rails ejecutamos
@@ -27,7 +27,7 @@ Ahora abre la carpeta foodie en tu editor de texto, revisemos algunas de las car
 | Gemfile/| Archivo con las Gemas de la aplicación, cada vez que se modifique ejecutamos ```$bundle install ```  |
 
 
-##Landing Page
+### Landing Page
 
 Para la landing necesitamos como mínimo un controlador y una vista,Para generarlos ejecuta:
 ```
@@ -37,7 +37,7 @@ Esto crea un controlador llamado *landing* con una acción o método llamado *in
 
 abre la vista que se encuenta en  ``` app/views/landing/index.html.erb``` y empieza agregar información a la landing page.
 
-##Foodie en el navegador
+### Foodie en el navegador
 Levantemos el servidor de rails para empezar a ver la aplicación funcionando, Ejecuta:
 ```
 $rails server
@@ -46,7 +46,7 @@ En tu navegador abre  [http://localhost:3000](http://localhost:3000)
 
 En la terminal presiona <kbd>Ctrl</kbd>+<kbd>C</kbd> para detener el servidor
 
-##ROOT (página de inicio)
+### ROOT (página de inicio)
 configuremos la landing como pagina de inicio cuando abramos  [http://localhost:3000](http://localhost:3000).
 
 Abre el archivo que se encuenta en  ``` config/routes.rb ```  y cambia la linea
