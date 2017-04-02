@@ -31,11 +31,11 @@ Ahora abre la carpeta foodie en tu editor de texto, revisemos algunas de las car
 
 Para la landing necesitamos como mínimo un controlador y una vista,Para generarlos ejecuta:
 ```
-$rails generate controller landing index
+$rails generate controller pages index
 ```
 Esto crea un controlador llamado *landing* con una acción o método llamado *index*  y dentro de la carpeta de vistas una carpeta que se llama *landing* con un archivo ``` .html.erb```  llamado *index*  y su ruta de acceso en el archivo ``` routes.rb```
 
-abre la vista que se encuenta en  ``` app/views/landing/index.html.erb``` y empieza agregar información a la landing page.
+abre la vista que se encuenta en  ``` app/views/pages/index.html.erb``` y empieza agregar información a la landing page.
 
 ### Foodie en el navegador
 Levantemos el servidor de rails para empezar a ver la aplicación funcionando, Ejecuta:
@@ -51,10 +51,10 @@ configuremos la landing como pagina de inicio cuando abramos  [http://localhost:
 
 Abre el archivo que se encuenta en  ``` config/routes.rb ```  y cambia la linea
 ```ruby
-get 'landing/index'
+get 'pages/index'
 ```
 por
 ```ruby
-root 'landing#index'
+root 'pages#index'
 ```
 [Inicio](../README.md)
