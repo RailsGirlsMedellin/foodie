@@ -26,7 +26,7 @@ Ahora abre la carpeta foodie en tu editor de texto, revisemos algunas de las car
 | vendor/ | Contiene los códigos de terceros (e.g. Bootstrap, plantillas )                                       |
 | Gemfile/| Archivo con las Gemas de la aplicación, cada vez que se modifique ejecutamos ```$bundle install ```  |
 
-
+<!---
 ### Landing Page
 
 Para la landing necesitamos como mínimo un controlador y una vista,Para generarlos ejecuta:
@@ -58,3 +58,4 @@ por
 root 'pages#index'
 ```
 [Inicio](../README.md)
+-->
