@@ -1,4 +1,4 @@
-##  Votación para elegir platos
+##  Votos para elegir platos
 
 ### ¿Qué necesitamos?
 
